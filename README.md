@@ -37,6 +37,8 @@ Replace the 6 with the number of the drive that the VHD will be when it's mounte
 - Now you'll need to edit OEMInput.xml to adjust the path for each "AdditionalFM" listed.
 	(You will see AndromedaAppsFM.xml is commented out, this is because the appx files for that Feature Manifest are not present.)
 
+- Next remove `FORCE_FFU_MODE_LAB` from the features in OEMInput to stop it trying to boot knto ffuloader each time.
+
 - Once you have made those changes, Open Command Prompt as Administrator and navigate to the ADK tools, these are usually found in if installed with default settings:
   "C:\Program Files (x86)\Windows Kits\10\tools\bin\i386\"
 
